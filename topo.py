@@ -28,7 +28,7 @@ for i in range(0, num_edg):
     # temp.append(v2)
     # edges.append(temp)
 
-print(edges)
+# print(edges)
 
 img_space = []
 #count = 0
@@ -51,15 +51,15 @@ for i in range(0, num_ver):
         #print(img_space)
     img_space.append(temp1)
 
-print()
+# print()
 # print(img_space)
-for i in range(num_ver):
-    for j in range(num_edg):
-        if(img_space[i][j] >= 0):
-            print("  ", img_space[i][j], end = " ")
-        else:
-            print(" ",img_space[i][j], end = " ")
-    print()
+# for i in range(num_ver):
+#     for j in range(num_edg):
+#         if(img_space[i][j] >= 0):
+#             print("  ", img_space[i][j], end = " ")
+#         else:
+#             print(" ",img_space[i][j], end = " ")
+#     print()
 
 rank = sym.Matrix(img_space).rank()
 #A = RREF
