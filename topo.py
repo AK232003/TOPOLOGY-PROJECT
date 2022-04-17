@@ -54,6 +54,5 @@ rank = sym.Matrix(img_space).rank()
 #A = RREF
 #print(RREF)
 #print(A[0])
-
 betti_0 = num_ver - rank
 print(betti_0)
