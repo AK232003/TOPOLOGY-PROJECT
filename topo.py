@@ -1,12 +1,10 @@
-# import sympy 
-#from sympy import * 
 import sympy as sym
 
-print("number of vertices: ")
+print("Enter the number of vertices: ")
 num_ver = int(input())
-print("number of edges: ")
+print("Enter the number of edges: ")
 num_edg = int(input())
-print("number of faces: ")
+print("Enter the number of faces: ")
 num_fac = int(input())
 
 ver = []
