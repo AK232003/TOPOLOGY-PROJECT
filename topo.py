@@ -18,12 +18,15 @@ for i in range(0, num_ver):
 
 print("Enter the edges: ")
 for i in range(0, num_edg):
-    temp=[]
-    v1 = int(input())
-    v2 = int(input())
-    temp.append(v1)
-    temp.append(v2)
-    edges.append(temp)
+    # temp=[]
+    # v1 = int(input())
+    # v2 = int(input())
+
+    edge_1 = list(map(int, input("Enter comma separated edge vertices: ").split(",")))
+    edges.append(edge_1)
+    # temp.append(v1)
+    # temp.append(v2)
+    # edges.append(temp)
 
 print(edges)
 
@@ -48,11 +51,22 @@ for i in range(0, num_ver):
         #print(img_space)
     img_space.append(temp1)
 
-print(img_space)
+print()
+# print(img_space)
+for i in range(num_ver):
+    for j in range(num_edg):
+        if(img_space[i][j] >= 0):
+            print("  ", img_space[i][j], end = " ")
+        else:
+            print(" ",img_space[i][j], end = " ")
+    print()
 
 rank = sym.Matrix(img_space).rank()
 #A = RREF
 #print(RREF)
 #print(A[0])
 betti_0 = num_ver - rank
-print(betti_0)
+
+print("==========")
+print('| \N{GREEK SMALL LETTER BETA}\N{SUBSCRIPT ZERO} =',betti_0,'|')
+print("==========")
