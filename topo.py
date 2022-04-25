@@ -16,17 +16,11 @@ def readfile(filename):
     print("The number of faces are: " ,num_fac);
 
     
-    ver = []
     edges = []
     faces =[]
-    # coords = []
 
     for i in range(0, num_ver):
         j = f.readline()
-        # coords.append(j)
-
-    for i in range(0, num_ver):
-        ver.append(i+1);
 
     for i in range(0, num_edg):
         edge = f.readline();
