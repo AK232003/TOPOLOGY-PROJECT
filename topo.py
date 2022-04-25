@@ -19,11 +19,11 @@ def readfile(filename):
     ver = []
     edges = []
     faces =[]
-    coords = []
+    # coords = []
 
     for i in range(0, num_ver):
         j = f.readline()
-        coords.append(j)
+        # coords.append(j)
 
     for i in range(0, num_ver):
         ver.append(i+1);
