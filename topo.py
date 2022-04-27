@@ -17,7 +17,6 @@ def readfile(filename):
 
     
     edges = []
-    faces =[]
 
     for i in range(0, num_ver):
         j = f.readline()
