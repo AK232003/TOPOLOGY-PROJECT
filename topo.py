@@ -9,11 +9,11 @@ def readfile(filename):
     line = (f.readline());
     list_ver_edg_fac = line.split(' ');
     num_ver = int(list_ver_edg_fac[0]); 
-    print("The number of vertices are: ", num_ver);
+    print("The number of vertices are: ", num_ver)
     num_edg = int(list_ver_edg_fac[1]);
-    print("The number of edges are: " ,num_edg);
+    print("The number of edges are: " ,num_edg)
     num_fac = int(list_ver_edg_fac[2]);
-    print("The number of faces are: " ,num_fac);
+    print("The number of faces are: " ,num_fac)
 
     
     edges = []
